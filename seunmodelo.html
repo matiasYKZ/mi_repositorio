@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODEL | Model Management</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="medium-m-brands.svg">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="imagenes/logo.png"></a>
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="galeria.html">gallery</a></li>
+            <li><a href="seunmodelo.html">be a model</a></li>
+            <li><a href="acercadenosotros.html">about us</a></li>
+            <li><a href="contacto.html">contact</a></li>
+        </ul>
+    </nav>
+    <div class="contenedor">
+        <h2>Formulario</h2>
+        <form action="formulario" method="post" enctype="multipart/form-data">
+            <fieldset>
+            <table>
+            <tr>
+             <td>Nombre</td>
+             <td>
+             <input type="text" placeholder="Ingresar Nombre" required="required" name="name">
+             </td>
+            </tr>
+            <tr>
+             <td>Contraseña</td>
+             <td>
+             <input type="password" placeholder="Ingresar contraseña" required="required" required name="contraseña">
+             </td>
+            </tr>
+            <tr>
+             <td>Email</td>
+             <td>
+             <input type="Email" placeholder="Ingresar Email" required="required" name="email">
+             </td>
+            </tr>
+            <tr>
+             <td>Fecha De Nacimiento</td>
+             <td>
+             <input type="date" name="nacimiento">
+             </td>
+            </tr>
+            <tr>
+             <td>Telefono.</td>
+             <td>
+             <input type="number" name="telefono">
+             </td>
+            </tr>
+            <tr>
+             <td>Genero</td>
+             <td>
+             <label><input type="radio" name="sexo" value="Hombre">Hombre</label><br>
+            <label><input type="radio" name="sexo" value="Mujer">Mujer</label><br>
+            <label><input type="radio" name="sexo" value="Sin especifar">Sin especificar</label>
+             </td>
+            </tr>
+            <tr>
+             <td>Idioma</td>
+             <td>
+             <input type="checkbox" checked name="idioma1" value="Español">Español
+             <input type="checkbox" name="idioma2" value="Ingles">Ingles
+             </td>
+            </tr>
+            <tr>
+             <td>
+             <input type="submit" value="Enviar">
+             <input type="reset" value="Reestablecer">
+             </td>
+            </tr>
+            </table>
+            </fieldset>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2022-♾ MaleManagement | All Rights Reserved</p>
+    </footer> 
+</body>
+</html>
