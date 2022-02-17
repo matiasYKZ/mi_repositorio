@@ -1,9 +1,23 @@
+@font-face {
+    font-family: didot;
+    src: url(didot-italic.ttf);
+}
 
+
+body {
+    background-image: url(imagenes/city.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    font-family: didot;
+}
 
 /*===================MENU==========================*/
 
 #menu a, button{
-    font-size: 18px !important;
+    font-size: 18px;
     font-weight: 600;
    
 }
@@ -13,21 +27,22 @@
     
 }
 #menu a:hover {
-    color: cyan;
+    color: yellow;
 }
 #menu {
     background-color: black;
+    z-index: 5;
 }
 /*===================SLIDER DE IMAGENES==========================*/
 
 .carousel-inner {
-   max-height:39rem !important;
+   max-height:39rem;
 }
 
 /*===================SECCION IMAGEN==========================*/
 
 #galeria .col-lg-4 {
-    margin: 0 !important;
+    margin: 0;
     padding: 25px;
 }
 #galeria img {
@@ -40,12 +55,165 @@
    transform:scale(1.1);
 }
 
+/*===================fondo y formulario==========================*/
+.masthead {
+    min-height: 30vh;
+    position: relative;
+    color: yellow;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0,.2);
+}
+h1 {
+    font-size: 4rem;
+    text-decoration: underline 3px;
+}
+.color-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,.2);
+}
+@media (max-width: 768px) {
+    .masthead {
+        min-height: 30vh;
+    }
+    .h1 {
+        font-size: calc(1.525rem + 3.3vw);
+    }
+}
+/*===================acerca de nosotros==========================*/
+
+.containerv2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+
+.containerv2 .row .col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    padding: 0;
+    margin: 0 !important;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 280px;
+    max-height: 340px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-image {
+    width: 100%;
+    max-height: 340px;
+}
+
+.card .card-image img {
+    width: 100%;
+    max-height: 340px;
+    object-fit: cover;
+}
+
+.card .card-content {
+    position: absolute;
+    bottom: -180px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    min-height: 140px;
+    width: 100%;
+    transition: bottom .4s ease-in;
+    box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card:hover .card-content {
+    bottom: 0px;
+}
+
+.card:hover .card-content h4,
+.card:hover .card-content h5 {
+    transform: translateY(10px);
+    opacity: 1;
+}
+
+.card .card-content h4,
+.card .card-content h5 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    transition: 0.8s;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(-40px);
+    transition-delay: 0.2s;
+}
+
+.card .card-content h5 {
+    transition: 0.5s;
+    font-weight: 200;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.card .card-content .social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.card .card-content .social-icons li {
+    margin: 10px;
+    transition: 0.5s;
+    transition-delay: calc(0.15s * var(--i));
+    transform: translateY(50px);
+}
+
+.card:hover .card-content .social-icons li {
+    transform: translateY(20px);
+}
+
+.card .card-content .social-icons li a {
+    color: #fff;
+}
+
+.card .card-content .social-icons li a span {
+    font-size: 1.3rem;
+}
+
+@media(max-width: 991.5px) {
+    .containerv2 {
+        margin-top: 20px;
+    }
+
+    .containerv2 .row .col-lg-4 {
+        margin: 20px 0px;
+    }
+}
+/*=========================h1-index================================*/
+
+.jumbotron h1 {
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.jumbotron p {
+    color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
 
 
 /*=========================FOOTER================================*/
 
 footer {
+   margin-top: 300px;
    background: black;
    min-height: 100px;
    
@@ -59,3 +227,53 @@ footer p{
    padding: 0 8px;
    color:#f3f3f3;
 }
+
+.form-label {
+    color: yellow;
+}
+/*=========================Be A Model================================*/
+header {
+    position: relative;
+    background-color: black;
+    height: 68vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url(imagenes/triumphal_arch.mp4);
+    }
+  
+  }
