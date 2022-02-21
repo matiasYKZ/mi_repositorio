@@ -7,49 +7,49 @@
 
     <!-- Bootstrap CSS -->
     <link rel="icon" href="medium-m-brands.svg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
     <link rel="stylesheet" href="estilos.css">
     <title>Index</title>
   </head>
   <body>
-  <!--========================================================== -->
+      <!--========================================================== -->
                         <!-- ENCABEZADO -->
   <!--========================================================== -->
-  <nav  class="navbar navbar-expand-lg navbar-dark p-3"  id="menu">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
+    <nav class="navbar navbar-expand-lg navbar-light" id="menu">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
           <img src="imagenes/logo.png" alt="logete">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">
-            <i class="fas fa-bars" style="color: white; font-size:28px;"></i>
-        </span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="galeria.html">gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="seunmodelo.html">Be A Model</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="acercadenosotros.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contact</a>
-          </li>
-        </ul>
+        </a>
+        <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="seunmodelo.html">Be A Model</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="acercadenosotros.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-    </div>
-  </nav>
     <!--========================================================== -->
                         <!-- SLIDER DE IMAGENES-->
     <!--========================================================== -->
@@ -89,7 +89,7 @@
     <!--========================================================== -->
                         <!-- INTRO -->
     <!--========================================================== -->   
-    <div class="jumbotron">
+    <div class="jumbotron" data-aos="fade-up" data-aos-duration="2000">
         <h1 class="display-4">INSTAGRAM</h1>
         <p class="lead">seguinos en nuestras redes sociales.</p>
         <p class="lead">
@@ -109,9 +109,12 @@
             <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>  
         </div>
   </footer>      
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
   </body>
 </html>
