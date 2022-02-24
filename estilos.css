@@ -401,3 +401,9 @@ header {
     }
   
   }
+/*=========================google maps================================*/
+.googlemap {
+    width: 100%;
+    filter: grayscale(100%) invert(100%);
+    padding-top: 5px;
+}
