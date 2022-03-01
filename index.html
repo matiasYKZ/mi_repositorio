@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="icon" href="medium-m-brands.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="medium-m-brands.svg">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
     <link rel="stylesheet" href="estilos.css">
     <title>MODEL | Management</title>
   </head>
   <body>
-      <!--========================================================== -->
+<!--========================================================== -->
                         <!-- ENCABEZADO -->
-  <!--========================================================== -->
+<!--========================================================== -->
     <nav class="navbar navbar-expand-lg navbar-light" id="menu">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
@@ -50,10 +50,10 @@
       </div>
     </nav>
 
-    <!--========================================================== -->
+<!--========================================================== -->
                         <!-- SLIDER DE IMAGENES-->
-    <!--========================================================== -->
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+<!--========================================================== -->
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-duration="2000">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -62,16 +62,25 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="3000">
             <img class="img-fluid" src="imagenes/olu.jpg" class="d-block w-100" alt="slide1">
+            <div class="carousel-caption">
+              <h2>models of the month</h2>
+            </div>
           </div>
           
  
           <div class="carousel-item" data-bs-interval="3000">
             <img class="img-fluid" src="imagenes/filipp.jpg" class="d-block w-100" alt="slide2">
+            <div class="carousel-caption">
+              <h2>models of the month</h2>
+            </div>
           </div>
  
 
           <div class="carousel-item" data-bs-interval="3000">
             <img class="img-fluid" src="imagenes/levi.jpg" class="d-block w-100" alt="slide3">
+            <div class="carousel-caption">
+              <h2>models of the month</h2>
+            </div>
           </div>
  
  
@@ -86,16 +95,63 @@
         </button>
       </div>  
       
-    <!--========================================================== -->
+<!--========================================================== -->
                         <!-- INTRO -->
-    <!--========================================================== -->   
+<!--========================================================== -->   
     <div class="jumbotron" data-aos="fade-up" data-aos-duration="2000">
-        <h1 class="display-4">INSTAGRAM</h1>
-        <p class="lead">seguinos en nuestras redes sociales.</p>
         <p class="lead">
-          <a class="btn btn-dark btn-lg" href="https://www.instagram.com/" target="_blank" role="button">Explorar</a>
+          <a class="btn btn-warning btn-lg" href="https://www.instagram.com/" target="_blank" role="button">INSTAGRAM</a>
         </p>
       </div>
+
+<!--========================================================== -->
+                        <!-- SLIDER V2 -->
+<!--========================================================== -->
+
+<div id="carouselv2" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-duration="2000">
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselv2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselv2" data-bs-slide-to="1" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselv2" data-bs-slide-to="2" aria-label="Slide 6"></button>
+    </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img class="img-fluid" src="imagenes/prueba1.jpg" class="d-block w-100" alt="slide4">
+      <div class="carousel-caption">
+        <h5>models of the week</h5>
+        <p><a href="https://www.instagram.com/">Follow Him</a></p>
+      </div>         
+    </div>
+    
+
+    <div class="carousel-item" data-bs-interval="3000">
+      <img class="img-fluid" src="imagenes/prueba2.jpg" class="d-block w-100" alt="slide5">   
+      <div class="carousel-caption">
+        <h5>models of the week</h5>
+        <p><a href="https://www.instagram.com/">Follow Him</a></p>
+      </div>  
+    </div>
+
+
+    <div class="carousel-item" data-bs-interval="3000">
+      <img class="img-fluid" src="imagenes/prueba3.jpg" class="d-block w-100" alt="slide6">
+      <div class="carousel-caption">
+        <h5>models of the week</h5>
+        <p><a href="https://www.instagram.com/">Follow Him</a></p>
+      </div>  
+    </div>
+
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselv2"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselv2"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>    
 
 <!--========================================================== -->
                         <!--FOOTER-->
